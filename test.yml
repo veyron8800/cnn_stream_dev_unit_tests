@@ -1,0 +1,14 @@
+KerasH5: {name}.h5
+InputData: TestData/test_in.dat
+OutputPredictions: TestData/test_out.dat
+OutputDir: {name}
+ProjectName: {name}
+XilinxPart: xcku115-flvb2104-2-i
+ClockPeriod: 5
+
+IOType: io_stream
+HLSConfig:
+ Model:
+   Precision: ap_fixed<16,6>
+   ReuseFactor: 2
+   Strategy: Resource
